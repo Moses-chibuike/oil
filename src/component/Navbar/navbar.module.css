@@ -1,0 +1,48 @@
+.nav-container{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.logo{
+    margin-left: 2em;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.logo p{
+ font-size: 1.3em;
+ padding-left: 0.3em;
+ color: #000;
+}
+
+/* .nav-links{
+    width: 35%;
+} */
+
+/* .nav-links ul{
+    display: flex;
+    width: 100%;
+} */
+
+/* .nav-links li {
+    width: 100%;
+    list-style: none;
+    font-family: Lato;
+    color: #505050;
+    font-size: 18px;
+} */
+
+@media screen and (max-width:869px){
+    .nav-container{
+        margin: 0;
+        padding: 0.5em;
+    }
+}

@@ -1,0 +1,199 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  z-index: 1;
+}
+
+.home-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 85vh;
+}
+
+.container video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #1597e5;
+}
+
+.container .homepage-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000f;
+  opacity: 0.85;
+}
+
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.text h1,
+.text h2,
+.text h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+  transform-origin: left;
+  text-transform: uppercase;
+  transform: scaleX(1);
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  color: #fff;
+  animation: revealTextReverse 1s ease-in-out forwards;
+  /* animation-delay: 1s; */
+}
+
+.text h1::before,
+.text h2::before,
+.text h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  transform-origin: right;
+  animation: revealText 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.text h2::before {
+  animation-delay: 1s;
+}
+
+.text h3::before {
+  animation-delay: 1.5s;
+}
+
+@keyframes revealTextReverse {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes revealText {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+.text button {
+  color: #fff;
+  background: transparent;
+  padding: 0.8em;
+  border: 2px solid #fff;
+  /* border-radius: 2px; */
+  font-size: 1.1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+}
+.text button p {
+  margin-right: 0.3em;
+}
+
+@media screen and (max-width: 1028px) {
+  .home-container {
+    flex-direction: column;
+    /* margin: 1em; */
+    /* padding: 1em; */
+  }
+  .text h1,
+  .text h2,
+  .text h3 {
+    font-size: 3em;
+  }
+  .text {
+    width: 60%;
+    
+      
+   
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text h1,
+  .text h2,
+  .text h3 {
+    font-size: 2.5em;
+  }
+
+  .container {
+    padding-left: 0;
+  }
+  .text {
+    width: 60%;
+  }
+  .homepage-container {
+    margin: 0;
+    /* padding: 2em; */
+  }
+  .small-container {
+    padding: 0;
+  }
+  .text button {
+    padding: 0.7em;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 528px) {
+  .text h1,
+  .text h2,
+  .text h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  /* .profile img {
+    border-radius: 50%;
+    border: 3px solid #505050;
+    height: 90%;
+    width: 100%;
+    text-align: center;
+  }
+  .profile {
+    padding: 3em;
+  } */
+
+  .text {
+    width: 87%;
+    left: 5%;
+   
+  }
+  .text p {
+    font-size: 1em;
+    line-height: 1.34m;
+  }
+}

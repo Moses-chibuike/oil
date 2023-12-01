@@ -1,0 +1,163 @@
+.know-us-container {
+  background: #f7fcff;
+  padding: 4em 4em 2em 4em;
+}
+
+.know-us-container .section-knowus{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em; 
+}
+
+.know-us-container .section-knowus .content{
+  flex: 1.2;
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  /* padding: 0 5em; */
+  align-items: center;
+}
+
+.know-us-container .text {
+  flex: 1;
+
+}
+
+
+
+.know-us-container .text h2 {
+  font-size: 2.5em;
+  color: #193498;
+  margin-bottom: 0.4em;
+  text-transform: uppercase;
+}
+
+.know-us-container .block {
+  background: #193498;
+  margin-top: 2em;
+  width: 15%;
+  height: 8px;
+
+}
+
+.know-us-container .content p {
+  color: #000;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.know-us-container .stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+}
+
+.know-us-container .stats .stats-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.know-us-container .stats .stats-data .count {
+  font-size: 4em;
+  line-height: 1.5em;
+  color: #193498;
+  font-weight: bold;
+}
+.know-us-container .stats .stats-data p {
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 968px) {
+
+  .know-us-container{
+    padding: 2em 0;
+  }
+
+  .know-us-container .section-knowus {
+    padding: 0 2em;
+    flex-direction:column;
+  }
+
+  .know-us-container .text h2 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+  }
+
+  .know-us-container .text p {
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.3em;
+  }
+
+  .know-us-container .section-knowus .content{
+    margin-top: 1.5em;
+  }
+  
+
+  .know-us-container .stats {
+    flex-direction: column;
+    margin: 1em 0;
+    
+  }
+
+  .know-us-container .stats .stats-data {
+    margin-bottom: 1em;
+  }
+  
+
+  .know-us-container .stats .stats-data .count {
+    font-size: 3.5em;
+    line-height: 1.2em;
+  }
+
+
+
+  .know-us-container .stats .stats-data p {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 568px){
+
+
+  .know-us-container .text h2 {
+    font-size: 1.8em;
+  }
+
+  .know-us-container .content p {
+    font-size: 1em;
+  }
+  
+  .know-us-container .block {
+    margin-top: 1em;
+  }
+
+  
+  .know-us-container .stats {
+    margin: 1em 0;
+  }
+  
+  .know-us-container .stats .stats-data {
+    margin-bottom: 1em;
+  }
+  
+  .know-us-container .section-knowus .content{
+    margin-top: 1em;
+  }
+  
+  .know-us-container .stats .stats-data .count {
+    font-size: 3em;
+    line-height: 1.2em;
+    
+  }
+  .know-us-container .stats .stats-data p {
+    font-size: 1em;
+  }
+}
+
+
