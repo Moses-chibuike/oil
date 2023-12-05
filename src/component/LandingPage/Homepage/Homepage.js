@@ -24,7 +24,7 @@ const Homepage = () => {
                 <div className={styles["text"]} >
                   <h1>Oil refinery </h1>
                   <h2>Crude Oil Processing</h2>
-                  <h3>Engineering and Consulting</h3>
+                  {/* <h3>Engineering and Consulting</h3> */}
                   <br />
                   <Link to='/portfolio' className={styles['link']}>
                         <button 
