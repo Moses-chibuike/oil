@@ -11,20 +11,20 @@ const ServicesCard = () => {
 
     const data = [
         {
-            title: "Architectural Services",
-            content: 'Our Architectural services includes design, preparation of construction documents and construction administration',
+            title: "OIL EXPLORATION",
+            content: 'Our oil exploration services encompass planning, document preparation, and thorough administration throughout the exploration process.',
             image: Arch
         },
 
         {
-            title: "Construction Services",
-            content: 'We ensure your project proceed as scheduled and aid minimizing delays and costly product deficiency issues',
+            title: "GAS PRODUCTION",
+            content: 'We guarantee the timely progression of your gas production project, minimizing delays and mitigating costly product deficiency issues.',
             image: Construct
         },
         
         {
-            title: "Consultation Services",
-            content: 'Our Consultation services has helped our clients reduce risks. We have a team of experts available for you',
+            title: "COMMERCIAL OPERATIONS",
+            content: 'Our commercial operations consultation services have effectively reduced risks for clients, backed by a dedicated team of available experts.',
             image: Consult
         },
         

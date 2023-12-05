@@ -25,14 +25,13 @@ const Footer = () => {
     return (
         <div className={styles["footer"]}>
 
-            <p> connect with me on social media </p>
+            <p> connect with us on social media </p>
             <div className={styles["footer-links"]}>
                 <Twitter />
                 < Instagram />
                 < Linkedin/>
-                < Github/>
             </div>
-            <p> designed and built by me </p>
+            <p> designed and built by KRAISNEFT </p>
         </div>
     )
 }

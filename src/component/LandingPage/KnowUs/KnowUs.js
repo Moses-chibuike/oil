@@ -35,8 +35,7 @@ const KnowUs = () => {
                                 data-aos="fade-up"
                                 data-aos-easing="linear"
                                 data-aos-duration="400"
-                                >Our firm is composed of committed professionals who bring their passion 
-                                    and the latest design technologies to bear on innovative and sustainable designs.
+                                >Our company comprises dedicated professionals who apply their expertise and cutting-edge engineering technologies to develop inventive and sustainable solutions tailored specifically for the oil industry.
                             </p>
                         </div>
 
@@ -52,7 +51,7 @@ const KnowUs = () => {
                                 </div>
                                 <div className={styles["stats-data"]}>
                                     <CountUp start={9000} end={10000} duration={10} className={styles["count"]}/> 
-                                    <p>professional architects</p>
+                                    <p>petroleum engineers</p>
                                 </div>
                                 <div className={styles["stats-data"]}>
                                     <CountUp start={0} end={14000} duration={10} className={styles["count"]}/> 

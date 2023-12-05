@@ -30,21 +30,20 @@ const ProjectOverview = () => {
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    > An Industry Leader In Sustainable Design </h3>
+                    > A Pioneer in Sustainable Solutions for the Oil Sector </h3>
                     <br />
                     <p
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    >Our team has extensive experience in a wide variety of architectural projects 
-                        and brings a unique perspective to problem solving.</p>
+                    >Our team possesses vast expertise in diverse oil industry projects, offering a distinctive approach to effective problem-solving in the realm of energy solutions.</p>
                         <br />
                     <p 
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    >Possessing a critical balance between field experience, formal education, and technical knowledge, 
-                        ensuring the ability to provide client satisfaction on every project</p>
+                    >
+                    Blending substantial field expertise, formal education, and technical proficiency, we guarantee client satisfaction across every oil industry project.</p>
               </div>
 
                 <div 
@@ -72,21 +71,21 @@ const ProjectOverview = () => {
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    > An Industry Leader In Sustainable Design </h3>
+                    > 
+                    A Trailblazer in Sustainable Solutions for the Oil Industry. </h3>
                     <br />
                     <p
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    >Our team has extensive experience in a wide variety of architectural projects 
-                        and brings a unique perspective to problem solving.</p>
+                    >Our team holds vast experience in diverse oil industry projects, offering a unique perspective in effective problem-solving.</p>
                         <br />
                     <p
                     data-aos="fade-up"
                     data-aos-easing="linear"
                     data-aos-duration="400"
-                    >Possessing a critical balance between field experience, formal education, and technical knowledge, 
-                        ensuring the ability to provide client satisfaction on every project</p>
+                    >
+                    Balancing field expertise, formal education, and technical knowledge, we ensure client satisfaction on every oil industry project.</p>
               </div>
 
                 

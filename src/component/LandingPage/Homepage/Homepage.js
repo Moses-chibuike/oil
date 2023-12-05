@@ -22,9 +22,9 @@ const Homepage = () => {
                 <div className={styles['homepage-overlay']}></div>
           
                 <div className={styles["text"]} >
-                  <h1>DESIGN</h1>
-                  <h2>ARCHITECTURE</h2>
-                  <h3>CONSTRUCTION</h3>
+                  <h1>Oil refinery </h1>
+                  <h2>Crude Oil Processing</h2>
+                  <h3>Engineering and Consulting</h3>
                   <br />
                   <Link to='/portfolio' className={styles['link']}>
                         <button 

@@ -24,7 +24,7 @@ const Navbar = ( { toggle } ) => {
         <NavContainer>
 
 
-             <NavLogo to='/'>   pentfort </NavLogo>
+             <NavLogo to='/'>   Kraisneft </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaIcon />
                 </MobileIcon>
