@@ -31,7 +31,7 @@ const Footer = () => {
                 < Instagram />
                 < Linkedin/>
             </div>
-            <p> designed and built by KRAISNEFT </p>
+            {/* <p> designed and built by KRAISNEFT </p> */}
         </div>
     )
 }

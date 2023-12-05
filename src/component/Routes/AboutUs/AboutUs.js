@@ -48,8 +48,7 @@ const AboutUs = () => {
                             <h1> Our Story </h1>
 
                             <h3> Consistent growth over the years </h3>
-                            <p>  We figured out early the value of multiple disciplines, 
-                                adding engineering services to architecture as soon as the steel building frame was invented.
+                             <p>  Recognizing the early significance of diverse expertise, we integrated engineering services into our portfolio shortly after the advent of the steel building frame, enhancing our capabilities in the oil industry.
 
                                 </p>
 
@@ -81,17 +80,17 @@ const AboutUs = () => {
 
                                 <div className='we-do-content'>
                                 <MdArchitecture className='icon'/>
-                                <p>  We Design </p>
+                                <p>  Oil exploration </p>
                             </div>
 
                             <div className='we-do-content'>
                                 <GiHouse className='icon'/>
-                                <p>  We Construct </p>
+                                <p>  commercial operations </p>
                             </div>
 
                             <div className='we-do-content'>
                                 <FaPeopleArrows className='icon'/>
-                                <p>  We Consult </p>
+                                <p>  Gas production </p>
                             </div>
                             </div>
 
@@ -116,7 +115,7 @@ const AboutUs = () => {
 
 
 
-                <section className='section3'>
+                {/* <section className='section3'>
 
                     <div className='image'>
                         <img src={Emma} alt={Emma} />
@@ -125,7 +124,7 @@ const AboutUs = () => {
 
                     <h1> James Brook</h1>
                     <h2> CEO </h2>
-                </section>
+                </section> */}
 
 
 
