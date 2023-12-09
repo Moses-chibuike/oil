@@ -90,9 +90,9 @@ const Contact = () => {
         (result) => {
           if (result.status === 200) {
             toast.success("We have received your message");
-           setEmailSender("")
-           setName("")
-           setMessage("")
+            setEmailSender("");
+            setName("");
+            setMessage("");
           }
         },
         (error) => {
@@ -136,11 +136,27 @@ const Contact = () => {
               >
                 <h1> Contact details </h1>
 
-                <p> Our headquarter is located at 2175 N. Orange Avenue.</p>
+                <p> Irkutsk, st. Polyarnaya, 77.</p>
 
-                <p> Suite 202 Sarasota, Florida 34236 </p>
+                <p>
+                  <strong> Reception:</strong>  office@kraisNeft-llc.com{" "}
+                </p>
 
-                <p> 831-824-4517 </p>
+                <p>
+                  <strong>Phone:</strong> +7-966-075-5308{" "}
+                </p>
+
+                <p>
+                  <strong>Opening hours (weekdays):</strong> from 8:00 to 17:00{" "}
+                </p>
+
+                <p>
+                  <strong>Sale department</strong> @sales@kraisneft-llc.com{" "}
+                </p>
+
+                <p>
+                  <strong>Retail department</strong> @kiv@kraisneft-llc.com{" "}
+                </p>
               </div>
 
               <div
