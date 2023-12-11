@@ -8,87 +8,90 @@ import Footer from "../Footer/Footer";
 import toast, { Toaster } from "react-hot-toast";
 // import Emma  from '../../../assets/images/emma.jpg'
 import emailjs from "@emailjs/browser";
+import env from "react-dotenv";
 
 const Contact = () => {
   const [emailSender, setEmailSender] = useState("");
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
 
-  const YOURMAIL = "ezechukwuchibuikemoses@gmail.com";
-  console.log(emailSender);
+  // const YOURMAIL = "ezechukwuchibuikemoses@gmail.com";
+  // console.log(emailSender);
 
-  async function SendMail(e) {
-    e.preventDefault();
-    if (!emailSender || !message || !name) {
-      toast.error("One or more field required");
-      return;
-    }
+  // async function SendMail(e) {
+  //   e.preventDefault();
+  //   if (!emailSender || !message || !name) {
+  //     toast.error("One or more field required");
+  //     return;
+  //   }
 
-    const options = {
-      method: "POST",
-      url: "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
-      headers: {
-        "content-type": "application/json",
-        "X-RapidAPI-Key": "a96bd059eamshcf24a85b9978e25p1abb39jsn4b943bb8ef08",
-        "X-RapidAPI-Host": "rapidprod-sendgrid-v1.p.rapidapi.com",
-      },
-      data: {
-        personalizations: [
-          {
-            to: [
-              {
-                email: YOURMAIL,
-              },
-            ],
-            subject: `A message from ${name}`,
-          },
-        ],
-        from: {
-          email: emailSender,
-        },
-        content: [
-          {
-            type: "text/plain",
-            value: message,
-          },
-        ],
-      },
-    };
+  //   const options = {
+  //     method: "POST",
+  //     url: "https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send",
+  //     headers: {
+  //       "content-type": "application/json",
+  //       "X-RapidAPI-Key": "a96bd059eamshcf24a85b9978e25p1abb39jsn4b943bb8ef08",
+  //       "X-RapidAPI-Host": "rapidprod-sendgrid-v1.p.rapidapi.com",
+  //     },
+  //     data: {
+  //       personalizations: [
+  //         {
+  //           to: [
+  //             {
+  //               email: YOURMAIL,
+  //             },
+  //           ],
+  //           subject: `A message from ${name}`,
+  //         },
+  //       ],
+  //       from: {
+  //         email: emailSender,
+  //       },
+  //       content: [
+  //         {
+  //           type: "text/plain",
+  //           value: message,
+  //         },
+  //       ],
+  //     },
+  //   };
 
-    try {
-      const response = await axios.request(options);
-      if (response?.status === 200) {
-        toast.success("Message sent sucessfully");
-      }
-      console.log(response.data);
-    } catch (error) {
-      console.error(error);
-      toast.error(error?.message);
-    }
-  }
+  //   try {
+  //     const response = await axios.request(options);
+  //     if (response?.status === 200) {
+  //       toast.success("Message sent sucessfully");
+  //     }
+  //     console.log(response.data);
+  //   } catch (error) {
+  //     console.error(error);
+  //     toast.error(error?.message);
+  //   }
+  // }
   const form = useRef();
-  const handleSendMessageClick = () => {
-    if (form && form.current) {
-      form.current.dispatchEvent(new Event("submit"));
-    }
-  };
+  // const handleSendMessageClick = () => {
+  //   if (form && form.current) {
+  //     form.current.dispatchEvent(new Event("submit"));
+  //   }
+  // };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    toast.loading('sending message')
     if (!emailSender || !message || !name) {
       toast.error("One or more field required");
       return;
     }
     emailjs
       .sendForm(
-        "service_x33m49k",
-        "template_42rw6wk",
+        env.EMAIL_SERVICE_ID,
+        env.EMAIL_TEMPLATE_ID,
         form.current,
-        "uAAxqqJgqo8vrVshk"
+        env.EMAIL_USER_ID
       )
       .then(
         (result) => {
           if (result.status === 200) {
+            toast.dismiss()
             toast.success("We have received your message");
             setEmailSender("");
             setName("");
